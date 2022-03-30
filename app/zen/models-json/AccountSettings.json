@@ -1,0 +1,13 @@
+{ 
+  "table": "account_settings",
+  "fields": [
+    { "column": "id", "type": "int(11)", "default": null, "primary_key": true, "auto_increment": true },
+    { "column": "account_id", "type": "int(11)", "join": "accounts.id" },
+    { "column": "setting", "type": "varchar(255)" },
+    { "column": "value", "type": "text" },
+    { "column": "date_created", "type": "date_time" },
+    { "column": "date_modified", "type": "date_modified" },
+    { "column": "created_by", "type": "int(11)", "join": "accounts.id" },
+    { "column": "modified_by", "type": "int(11)", "join": "accounts.id" }
+  ]
+}

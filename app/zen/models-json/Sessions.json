@@ -1,0 +1,14 @@
+{ 
+  "table": "sessions",
+  "fields": [
+    { "column": "id", "type": "int(11)", "default": null, "primary_key": true, "auto_increment": true },
+    { "column": "session_key", "type": "varchar(255)" },
+    { "column": "account_id", "type": "int(11)", "join": "accounts.id" },
+    { "column": "time_in", "type": "datetime" },
+    { "column": "time_out", "type": "datetime" },
+    { "column": "last_activity", "type": "datetime" },
+    { "column": "remember", "type": "tinyit(1)" },
+    { "column": "ip_address", "type": "varchar(100)" },
+    { "column": "device", "type": "text" }
+  ]
+}

@@ -1,0 +1,22 @@
+{ 
+	"table": "accounts",
+	"fields": [
+		{ "column": "id", "type" : "int(11)", "default": null, "primary_key": true, "auto_increment": true },
+		{ "column": "name", "type" : "varchar(255)", "default": "" },
+		{ "column": "name_first", "type": "varchar(255)" },
+		{ "column": "name_last", "type": "varchar(255)" },
+		{ "column": "email", "type": "varchar(255)" },
+		{ "column": "username", "type": "varchar(255)" },
+		{ "column": "pass", "type": "varchar(255)" },
+		{ "column": "status", "type": "tinyint(3)" },
+		{ "column": "photo", "type": "varchar(255)" },
+		{ "column": "timezone", "type": "varchar(255)" },
+		{ "column": "date_created", "type": "datetime" },
+		{ "column": "date_modified", "type": "datetime" },
+		{ "column": "type", "type": "varchar(100)" },
+		{ "column": "phone", "type": "varchar(255)" },
+		{ "column": "reset_key", "type": "varchar(100)" },
+		{ "column": "reset_timestamp", "type": "datetime" },
+		{ "column": "notes", "type": "text" }
+	]
+}

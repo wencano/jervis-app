@@ -1,0 +1,10 @@
+{
+    "require": {
+        "twilio/sdk": "^5.23",
+        "phpmailer/phpmailer": "^6.0",
+        "cirovargas/google-distance-matrix": "^0.0.8",
+        "ramsey/uuid": "^3.8",
+				"shippo/shippo-php": "1.*",
+        "nikic/php-parser": "^4.2"
+    }
+}

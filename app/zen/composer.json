@@ -1,0 +1,13 @@
+{
+    "name": "wencano/zen",
+    "type": "project",
+    "require": {
+        "ramsey/uuid": "^3.8"
+    },
+    "authors": [
+        {
+            "name": "wencano",
+            "email": "wen@wencano.com"
+        }
+    ]
+}

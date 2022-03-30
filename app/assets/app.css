@@ -1,0 +1,360 @@
+.text-left {text-align: left !important;}
+
+
+/**
+ * Form
+ */
+.editable-input {position: relative;}
+.editable-input-pencil {position: absolute; right: -10px; display: none;}
+.editable-input:hover .editable-input-pencil {display: block; }
+
+
+
+
+/**
+ * Special
+ */
+.break-word { word-break: break-all; }
+
+
+/**
+ * Technician Navbar
+ */
+.layout-top-nav .navbar-brand {margin-left: 15px; }
+.layout-top-nav .container {padding-left: 0; padding-right: 0; }
+@media (max-width: 991px) {	
+
+	.layout-top-nav .navbar-custom-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 10px;
+	}
+	
+}
+
+
+/**
+ * UI: Buttons
+ */
+.btn.active {
+    -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+    -moz-box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+    box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+}
+.btn-success.active { background-color: #008d4c; z-index: 2;}
+ 
+
+/** UI: Bootstrap Toggle */
+.toggle.ios, .toggle-on.ios, .toggle-off.ios { border-radius: 20px; }
+.toggle.ios .toggle-handle { border-radius: 20px; }
+.toggle.ios.btn-sm {border: 0 !important; }
+
+
+/**
+ * Breadcrumb Navigation
+ */
+.content-top { padding: 0px 10px; display: block; background: rgba(0,0,0,0.05); overflow: hidden; white-space: nowrap; }
+.content-top ul { list-style: none; padding: 0; margin: 0; }
+.content-top>ul>li {display: inline-block; }
+.content-top>ul>li+li:before { content: '\f3d1\00a0'; padding: 0 5px; color: #999; font-family: "Ionicons"; }
+.content-top>ul>li a {display: inline-block; padding: 2px 0; text-transform: uppercase; color: #999; }
+.content-top>ul>li a:hover, .content-top>ul>li a.active {color: #3c8dbc;}
+
+
+/**
+ * Header 
+ */
+.content-header>div>h1 { margin: 0; font-size: 24px; }
+
+
+/**
+ * UI: Pagination
+ */
+.pagination>.disabled>a, .pagination>.disabled>a:focus, .pagination>.disabled>a:hover, .pagination>.disabled>span, .pagination>.disabled>span:focus, .pagination>.disabled>span:hover { color: #bbb; }
+
+
+/**
+ * UI: Table
+ */
+.headerSortDown:after,
+.headerSortUp:after{
+  content: ' ';
+  position: relative;
+  left: 2px;
+  border: 8px solid transparent;
+}
+.headerSortDown:after{
+  top: 14px;
+  border-top-color: silver;
+}
+.headerSortUp:after{
+  bottom: 15px;
+  border-bottom-color: silver;
+}
+.headerSortDown,
+.headerSortUp{
+  padding-right: 10px;
+}
+
+div.row.table-row {
+	padding: 8px 0; 
+	margin-left: 0; 
+	margin-right: 0;
+	border-bottom: 1px solid #dedede; 
+}
+
+div.row.table-row:last-child {
+	border-bottom: 0; 
+}
+
+div.row.table-row > div,
+div.row.filter-row .dynamic-filter-wrapper > div {
+	padding: 0 6px; 
+}
+
+div.row.filter-row p.filter-label {margin: 5px 0 0 0; }
+
+
+/**
+ * UI: Progress Bar
+ */
+
+ 
+/**
+ * UI: hr
+ */
+hr.hr-narrow {margin: 6px 0; }
+
+
+/**
+ * Animations
+ */
+.anim { opacity: 0.01; }
+.anim-enter-1 {
+	transition: opacity 500ms ease-in; 
+	opacity: 1;
+}
+
+
+
+
+
+/**
+ * Sidebar
+ */
+.sidebar-menu li.events-item span.events-item-name {text-overflow: ellipsis; max-width: 180px; overflow: hidden; display: inline-block; line-height: 1em;}
+.sidebar-collapse .sidebar-menu li.events-item span.events-item-name {line-height: inherit; }
+
+/** Sidebar Search */
+#sidebar-events-search { display: block; position: absolute; right: 6px; top: 6px;}
+#sidebar-events-search input { display: block; width: 90px; border: 1px solid #4b646f; padding: 3px; background: transparent; color: #4b646f; }
+
+
+
+/**
+ * List Menu
+ */
+ul.list-menu {list-style: none; padding: 0; margin: 0;}
+ul.list-menu li {display: block; border-bottom: 1px solid #cccccc; }
+ul.list-menu li a {display: block; font-size: 20px; padding: 10px 20px 10px 45px; position: relative; }
+ul.list-menu li a i {position: absolute; top: 12px; left: 15px; }
+ul.list-menu li:hover {background: #efefef; }
+ul.list-menu li.active a {color: #ffffff; }
+
+
+
+/**
+ * Box Tools
+ */
+.box-tools {}
+.content-header .box-tools .btn { margin: 0 0 0 6px; }
+
+
+/**
+ * Table
+ */
+/** Compact Table */
+.table-compact {background: #dedede;}
+.table-compact tr:odd {background: #efefef;}
+.table.table-compact th, .table.table-compact td  { padding: 2px 2px; font-size: 12px; font-family: Arial; border: 1px solid #fff; border-bottom: 0; border-right: 0; }
+.table.table-compact th {padding: 8px;}
+.table.table-compact tr:last-child th, .table.table-compact tr:last-child td { border-bottom: 1px solid #aaa; border-right: 1px solid #fff; }
+.table tr.separator-border td { border-bottom: 1px solid #aaa; }
+
+
+ 
+ /** Table Tools */
+.table-has-tools .table-tools {display: inline-block; visibility: hidden;}
+.table-has-tools tr:hover .table-tools {visibility: visible;}
+ 
+/** Table Scrolling Header */
+#header-fixed {
+    position: fixed;
+    top: 0px; display:none;
+    background-color:white;
+		z-index: 1000;
+		box-shadow: rgba(0,0,0,0.6) 0 1px 2px;
+		background: #39cccc; 
+}
+#header-fixed tr th {border-bottom: 0; color: #fff; }
+
+
+/**
+ * Mouse Over
+ */
+.hover-trigger .hover-show {display: none; z-index: 100; }
+.hover-trigger:hover .hover-show {display: block}
+
+
+
+
+
+
+/**
+ * Notifications
+ */
+.notification-item {display: block; width: 100%; margin-bottom: 2px; }
+.notification-item a { color: #666666; padding: 5px; display: block; width: 100%; }
+.notification-item.notification-unread a { background: #dfdfdf; }
+
+
+
+/**
+ * Page: Login
+ */
+body.login-page #app {background: transparent; margin-top: -1px;  }
+.login-box-body {background: transparent; color: #fff;  }
+
+
+/**
+ * Page: Projects
+ */
+.timeslot-is-unavailable {background: #f39c12; }
+.timeslot-has-leave {background: #f39c12; }
+.timeslot-has-project {background: #dd4b39; }
+
+
+
+
+/*******************************
+* MODAL AS LEFT/RIGHT SIDEBAR
+* Add "left" or "right" in modal parent div, after class="modal".
+* Get free snippets on bootpen.com
+*******************************/
+.modal.left .modal-dialog,
+.modal.right .modal-dialog {
+    position: fixed;
+    margin: auto;
+    width: 360px;
+    height: 100%;
+    -webkit-transform: translate3d(0%, 0, 0);
+        -ms-transform: translate3d(0%, 0, 0);
+         -o-transform: translate3d(0%, 0, 0);
+            transform: translate3d(0%, 0, 0);
+}
+
+.modal.left .modal-content,
+.modal.right .modal-content {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.modal.left .modal-body,
+.modal.right .modal-body {
+    padding: 15px 15px 80px;
+}
+
+/*Left*/
+.modal.left.fade .modal-dialog{
+    left: -360px;
+    -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+       -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+         -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+            transition: opacity 0.3s linear, left 0.3s ease-out;
+}
+
+.modal.left.fade.in .modal-dialog{
+    left: 0;
+}
+    
+/*Right*/
+.modal.right.fade .modal-dialog {
+    right: -360px;
+    -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+       -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+         -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+            transition: opacity 0.3s linear, right 0.3s ease-out;
+}
+
+.modal.right .modal-dialog, .modal.right.fade.in .modal-dialog {
+    right: 0;
+}
+
+/* ----- MODAL STYLE ----- */
+.modal-content {
+    border-radius: 0;
+    border: none;
+}
+
+.modal-header {
+    border-bottom-color: #EEEEEE;
+    background-color: #FAFAFA;
+}
+
+
+/**
+ * Media Query pull-right, pull-left
+ */
+.pull-right-not-xs, .pull-right-not-sm, .pull-right-not-md, .pull-right-not-lg{
+    float: right;
+}
+
+.pull-left-not-xs, .pull-left-not-sm, .pull-left-not-md, .pull-left-not-lg{
+    float: left;
+}
+@media (max-width: 767px) {    
+    .pull-right-not-xs, .pull-left-not-xs{
+        float: none;
+    }
+    .pull-right-xs {
+        float: right;
+    }
+    .pull-left-xs {
+        float: left;
+    }
+		
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .pull-right-not-sm, .pull-left-not-sm{
+        float: none;
+    }
+    .pull-right-sm {
+        float: right;
+    }
+    .pull-left-sm {
+        float: left;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .pull-right-not-md, .pull-left-not-md{
+        float: none;
+    }
+    .pull-right-md {
+        float: right;
+    }
+    .pull-left-md {
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .pull-right-not-lg, .pull-left-not-lg{
+        float: none;
+    }
+    .pull-right-lg {
+        float: right;
+    }
+    .pull-left-lg {
+        float: left;
+    }
+}
